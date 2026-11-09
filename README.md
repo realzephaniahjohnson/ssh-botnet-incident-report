@@ -40,7 +40,9 @@ Something I noticed right away: these alerts fired because of who the IPs were, 
 
 I ran each IP through Mothlight's Investigate page, and all five came back as malicious with a risk score of 100 out of 100.
 
-![Mothlight Investigate page for 80.94.92.179](screenshots/01-mothlight-investigate-80.94.92.179.jpg)
+![Mothlight Investigate page for 80.94.92.179](screenshots/01-mothlight-investigate-80.94.92.179.png)
+
+*Mothlight's Investigate page for `80.94.92.179`, captured Nov 9, 2026 at 16:00 UTC.*
 
 | IP | Blocklists (IPsum) | Spamhaus DROP network | Other reputation | Honeypot events | Sessions | Active (UTC) |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -73,6 +75,12 @@ gantt
 ```
 
 The IPs hand off to each other cleanly. The first one, `80.94.92.234`, only ran the honeypot checks. Every IP after that ran the checks and then the dropper at least once.
+
+The last node, `92.118.39.71`, was still going when I closed out the data at 15:45 UTC. By 16:00 it was up to 457 events and 27 dropper lines, so the campaign was ongoing at the time of writing. The numbers in this report cover the window up to 15:45.
+
+![Mothlight threat globe with only the Honeypot layer on](screenshots/03-mothlight-globe-honeypot-arcs.png)
+
+*Mothlight's threat globe with only the Honeypot layer turned on, showing attacks arcing into the honeypot in Montreal.*
 
 ### Walking through one session
 
@@ -166,9 +174,11 @@ Hunting on the toolkit worked better than hunting on IPs. One query for the chec
 | [`evidence/session-6405c0945163-80.94.92.179.txt`](evidence/session-6405c0945163-80.94.92.179.txt) | The full session from section 4 |
 | [`iocs.csv`](iocs.csv) | Indicators of compromise |
 | [`queries/hunting-queries.md`](queries/hunting-queries.md) | The KQL and SPL I used, plus the two new detection rules |
-| [`screenshots/`](screenshots/) | Mothlight's Investigate and Search pages |
+| [`screenshots/`](screenshots/) | Mothlight's Investigate page, Search console and threat globe |
 
-![Mothlight Search: the KQL hunt that scoped the campaign](screenshots/02-mothlight-search-hunt.jpg)
+![Mothlight Search: the KQL hunt that scoped the campaign](screenshots/02-mothlight-search-hunt.png)
+
+*The scoping hunt in Mothlight's Search console, re-run at 16:00 UTC. `92.118.39.71` has grown since the 15:45 cutoff because it was still active.*
 
 ---
 
