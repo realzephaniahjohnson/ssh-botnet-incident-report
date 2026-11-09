@@ -1,0 +1,15 @@
+type,indicator,context,first_seen_utc,last_seen_utc
+ipv4,80.94.92.234,Campaign node 1: honeypot-check script (12 sessions),2026-11-09T02:48:02Z,2026-11-09T03:27:30Z
+ipv4,80.94.92.179,Campaign node 2: checks + /root/.16 dropper (5 sessions),2026-11-09T04:36:13Z,2026-11-09T04:49:16Z
+ipv4,195.178.110.227,Campaign node 3: checks + dropper (89 sessions),2026-11-09T05:14:03Z,2026-11-09T07:16:06Z
+ipv4,2.57.122.209,Campaign node 4: checks + dropper (8 sessions),2026-11-09T08:06:05Z,2026-11-09T08:21:45Z
+ipv4,92.118.39.71,Campaign node 5: checks + dropper (5 sessions),2026-11-09T15:36:01Z,2026-11-09T15:44:59Z
+cidr,80.94.92.0/24,Spamhaus DROP SBL636056 (hosts nodes 1 and 2),,
+cidr,195.178.110.0/24,Spamhaus DROP SBL677468; DShield top-20 attacking network (DATAFOREST DE),,
+cidr,2.57.122.0/24,Spamhaus DROP SBL636050,,
+cidr,92.118.39.0/24,Spamhaus DROP SBL636057,,
+file_path,/root/.16,Hidden payload made executable via chmod +x,2026-11-09T04:40:53Z,
+command,echo '<password>' | sudo -S sh -c 'chmod +x '\''/root/.16'\''',Privilege escalation using the password just guessed (18 of 18 sessions),,
+string,check_<32 hex chars>_small_control,Marker from the honeypot-detection script (math / PID / function / argument checks),,
+string,check_<32 hex chars>_transport_done,End marker printed after each round of checks,,
+string,_filter_pid _filter_rest < /proc/self/stat,Process / namespace inspection used to spot emulated shells,,

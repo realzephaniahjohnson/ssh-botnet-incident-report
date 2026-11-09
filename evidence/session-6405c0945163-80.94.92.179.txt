@@ -1,0 +1,45 @@
+# Full Cowrie session from 80.94.92.179 (session 6405c0945163), 2026-11-09
+# Source: mothlight-honeypot-data. Commands are cut at 200 characters by the export.
+
+2026-11-09T04:39:04Z  login_success  user=root password=111111
+2026-11-09T04:39:06Z  command        sh -c 'printf '"'"'\n%s|%s\n'"'"' '"'"'check_d1a1629b633cb9725fc233709358de6d_small_control'"'"' '"'"'check_d1a1629b633cb9725fc233709358de6d'"'"''
+2026-11-09T04:39:06Z  command        printf '\n%s|%s\n' 'check_d1a1629b633cb9725fc233709358de6d_small_control' 'check_d1a1629b633cb9725fc233709358de6d'
+2026-11-09T04:39:06Z  command        sh -c 'printf '"'"'\n%s|%s\n'"'"' '"'"'check_d1a1629b633cb9725fc233709358de6d_small_math'"'"' "$((825*469+25))"'
+2026-11-09T04:39:06Z  command        printf '\n%s|%s\n' 'check_d1a1629b633cb9725fc233709358de6d_small_math' "$((825*469+25))"
+2026-11-09T04:39:07Z  command        sh -c 'printf '"'"'\n%s|%s\n'"'"' '"'"'check_d1a1629b633cb9725fc233709358de6d_small_pid'"'"' "$$"'
+2026-11-09T04:39:07Z  command        printf '\n%s|%s\n' 'check_d1a1629b633cb9725fc233709358de6d_small_pid' "$$"
+2026-11-09T04:39:07Z  command        sh -c 'set -- '"'"'check_d1a1629b633cb9725fc233709358de6d_arg1'"'"' '"'"'check_d1a1629b633cb9725fc233709358de6d_arg2'"'"'; printf '"'"'\n%s|%s\n'"'"' '"'"'check_d1a1629b633cb9725fc233709358de6d_small_
+2026-11-09T04:39:07Z  command        set -- 'check_d1a1629b633cb9725fc233709358de6d_arg1' 'check_d1a1629b633cb9725fc233709358de6d_arg2'; printf '\n%s|%s\n' 'check_d1a1629b633cb9725fc233709358de6d_small_positional' "$#|$1|$2"
+2026-11-09T04:39:07Z  command        sh -c 'f_check_d1a1629b633cb9725fc233709358de6d() { printf '"'"'\n%s|%s\n'"'"' '"'"'check_d1a1629b633cb9725fc233709358de6d_small_function'"'"' "$1|$#"; }; f_check_d1a1629b633cb9725fc233709358de6d '"'"
+2026-11-09T04:39:07Z  command        f_check_d1a1629b633cb9725fc233709358de6d() { printf '\n%s|%s\n' 'check_d1a1629b633cb9725fc233709358de6d_small_function' "$1|$#"; }; f_check_d1a1629b633cb9725fc233709358de6d 'check_d1a1629b633cb9725fc2
+2026-11-09T04:39:07Z  command        sh -c 'printf '"'"'\n%s\n'"'"' '"'"'check_d1a1629b633cb9725fc233709358de6d_small_done'"'"''
+2026-11-09T04:39:07Z  command        printf '\n%s\n' 'check_d1a1629b633cb9725fc233709358de6d_small_done'
+2026-11-09T04:39:07Z  command        sh -c 'printf '"'"'\n%s|%s\n'"'"' '"'"'check_e543a764d707dbb447102271317fa434_small_control'"'"' '"'"'check_e543a764d707dbb447102271317fa434'"'"''
+2026-11-09T04:39:07Z  command        printf '\n%s|%s\n' 'check_e543a764d707dbb447102271317fa434_small_control' 'check_e543a764d707dbb447102271317fa434'
+2026-11-09T04:39:07Z  command        sh -c 'printf '"'"'\n%s|%s\n'"'"' '"'"'check_e543a764d707dbb447102271317fa434_small_math'"'"' "$((866*240+7))"'
+2026-11-09T04:39:07Z  command        printf '\n%s|%s\n' 'check_e543a764d707dbb447102271317fa434_small_math' "$((866*240+7))"
+2026-11-09T04:39:07Z  command        sh -c 'printf '"'"'\n%s|%s\n'"'"' '"'"'check_e543a764d707dbb447102271317fa434_small_pid'"'"' "$$"'
+2026-11-09T04:39:07Z  command        printf '\n%s|%s\n' 'check_e543a764d707dbb447102271317fa434_small_pid' "$$"
+2026-11-09T04:39:07Z  command        sh -c 'set -- '"'"'check_e543a764d707dbb447102271317fa434_arg1'"'"' '"'"'check_e543a764d707dbb447102271317fa434_arg2'"'"'; printf '"'"'\n%s|%s\n'"'"' '"'"'check_e543a764d707dbb447102271317fa434_small_
+2026-11-09T04:39:07Z  command        set -- 'check_e543a764d707dbb447102271317fa434_arg1' 'check_e543a764d707dbb447102271317fa434_arg2'; printf '\n%s|%s\n' 'check_e543a764d707dbb447102271317fa434_small_positional' "$#|$1|$2"
+2026-11-09T04:39:07Z  command        sh -c 'f_check_e543a764d707dbb447102271317fa434() { printf '"'"'\n%s|%s\n'"'"' '"'"'check_e543a764d707dbb447102271317fa434_small_function'"'"' "$1|$#"; }; f_check_e543a764d707dbb447102271317fa434 '"'"
+2026-11-09T04:39:07Z  command        f_check_e543a764d707dbb447102271317fa434() { printf '\n%s|%s\n' 'check_e543a764d707dbb447102271317fa434_small_function' "$1|$#"; }; f_check_e543a764d707dbb447102271317fa434 'check_e543a764d707dbb44710
+2026-11-09T04:39:07Z  command        sh -c 'printf '"'"'\n%s\n'"'"' '"'"'check_e543a764d707dbb447102271317fa434_small_done'"'"''
+2026-11-09T04:39:07Z  command        printf '\n%s\n' 'check_e543a764d707dbb447102271317fa434_small_done'
+2026-11-09T04:39:07Z  command        echo; echo 'check_de81fe4a71ef811ab99606aa960079c6_transport_done'
+2026-11-09T04:39:10Z  command        sh -c 'printf '"'"'\n%s\n'"'"' '"'"'check_e4d439b9a7c99dcdf66a0390e35f02a2_begin'"'"'; sh -c '"'"'printf '"'"'"'"'"'"'"'"'%s\n'"'"'"'"'"'"'"'"' '"'"'"'"'"'"'"'"'check_85f375cea14c95b4a079fcc48b3fc31b_
+2026-11-09T04:39:14Z  command        printf '\n%s\n' 'check_e4d439b9a7c99dcdf66a0390e35f02a2_begin'; sh -c 'printf '"'"'%s\n'"'"' '"'"'check_85f375cea14c95b4a079fcc48b3fc31b_control'"'"'; printf '"'"'\n%s\n'"'"' '"'"'check_85f375cea14c95
+2026-11-09T04:39:15Z  command        printf '%s\n' 'check_85f375cea14c95b4a079fcc48b3fc31b_control'; printf '\n%s\n' 'check_85f375cea14c95b4a079fcc48b3fc31b_0_begin'; sh -c 'if IFS='"'"' '"'"' read -r _filter_pid _filter_rest < /proc/sel
+2026-11-09T04:39:16Z  command        if IFS=' ' read -r _filter_pid _filter_rest < /proc/self/stat; then _filter_status_pid=NA; _filter_ns=NA; _filter_status_ok=0; if [ -r /proc/self/status ]; then _filter_status_ok=1; while IFS=: read -
+2026-11-09T04:39:17Z  command        if IFS=' ' read -r _filter_pid _filter_rest < /proc/self/stat; then _filter_status_pid=NA; _filter_ns=NA; _filter_status_ok=0; if [ -r /proc/self/status ]; then _filter_status_ok=1; while IFS=: read -
+2026-11-09T04:39:17Z  command        value=$((19+23)); if [ "$value" -eq 42 ]; then printf '%s\n' 'check_92a4ac34147e962f928e56cb24335d83' "$value" 'branch-ok'; else exit 9; fi
+2026-11-09T04:39:17Z  command        printf '%s\n' 'check_92a4ac34147e962f928e56cb24335d83' | while IFS= read -r line; do printf 'pipe=%s\n' "$line"; done
+2026-11-09T04:39:17Z  command        v=outer; (v=inner; printf 'child=%s\n' "$v"); printf 'parent=%s\n' "$v"
+2026-11-09T04:39:17Z  command        printf '%s\n' 'a b;$()'
+2026-11-09T04:39:17Z  command        set -- 'check_92a4ac34147e962f928e56cb24335d83' 'second value'; printf '%s|%s|%s\n' "$#" "$1" "$2"
+2026-11-09T04:39:17Z  command        f_check_92a4ac34147e962f928e56cb24335d83() { printf 'arg=%s|count=%s\n' "$1" "$#"; }; f_check_92a4ac34147e962f928e56cb24335d83 'check_92a4ac34147e962f928e56cb24335d83'; printf '%s\n' 'check_92a4ac3414
+2026-11-09T04:39:17Z  command        printf '%s\n' 'check_92a4ac34147e962f928e56cb24335d83' >&2; exit 37
+2026-11-09T04:39:17Z  command        echo; echo 'check_91089122d3db25b82e815de88add04d9_transport_done'
+2026-11-09T04:40:53Z  command        echo '111111' | sudo -S sh -c 'chmod +x '\''/root/.16'\''' || echo '111111' | sudo -S chmod +x '/root/.16' || sh -c 'chmod +x '\''/root/.16'\''' || chmod +x '/root/.16'
+2026-11-09T04:40:53Z  command        chmod +x '/root/.16'
+2026-11-09T04:40:53Z  command        chmod +x '/root/.16'
